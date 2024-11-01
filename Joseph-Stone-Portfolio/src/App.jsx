@@ -6,7 +6,7 @@ function App() {
   return (
     <>
       <Header>  
-        <Navigation></Navigation>
+        <Navigation />
       </Header>
       <Outlet />
     </>
