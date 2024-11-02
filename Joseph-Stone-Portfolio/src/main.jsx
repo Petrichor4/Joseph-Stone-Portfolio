@@ -1,16 +1,17 @@
-import ReactDom from 'react-dom/client';
+import ReactDom from "react-dom/client";
 
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 
-import './index.css'
+import "./index.css";
 
-import App from './App.jsx'
-import AboutMe from './pages/aboutMe.jsx';
-import ErrorPage from './pages/ErrorPage.jsx'
+import App from "./App.jsx";
+import AboutMe from "./pages/aboutMe.jsx";
+import ErrorPage from "./pages/ErrorPage.jsx";
+import Projects from "./pages/projects.jsx";
 
 const router = createBrowserRouter([
   {
-    path: '/',
+    path: "/",
     element: <App />,
     errorElement: <ErrorPage />,
     children: [
@@ -18,14 +19,14 @@ const router = createBrowserRouter([
         index: true,
         element: <AboutMe />,
       },
-      // {
-      //   path: '/projects',
-      //   element: <Project />
-      // }
-    ]
-  }
-])
+      {
+        path: "/projects",
+        element: <Projects />,
+      },
+    ],
+  },
+]);
 
-ReactDom.createRoot(document.getElementById('root')).render(
+ReactDom.createRoot(document.getElementById("root")).render(
   <RouterProvider router={router} />
 );

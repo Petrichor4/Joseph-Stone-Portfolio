@@ -1,10 +1,33 @@
+:root {
+  --main-bg: #373f51;
+  --highlight: #3eff8b;
+}
+
 header {
   display: flex;
   justify-content: space-around;
-  background-color: #373f51;
+  background-color: var(--main-bg);
   height: 20vh;
   width: 100%;
   color: #f3d3bd;
+}
+footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  left: 0;
+  display: flex;
+  justify-content: center;
+}
+i {
+  color: var(--main-bg);
+  transition: 300ms;
+  margin: 2%;
+}
+i:hover {
+  color: var(--highlight);
+  cursor: pointer;
+  transition: 300ms;
 }
 h1 {
   width: 33%;

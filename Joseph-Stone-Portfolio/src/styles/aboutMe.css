@@ -1,0 +1,15 @@
+p {
+  margin: 2%;
+  width: 50%;
+  flex: auto;
+}
+h2 {
+  font-size: x-large;
+  margin: 2% 2% 0;
+}
+.container {
+  display: flex;
+}
+.avatar {
+  align-self: flex-start;
+}
