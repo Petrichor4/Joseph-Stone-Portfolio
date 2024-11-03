@@ -18,36 +18,7 @@ export default function AboutMe() {
               // initials="JS"
             />
             <p>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Vel qui
-              rem et ad veniam neque, hic, accusamus dolorem nemo culpa
-              assumenda quisquam ducimus deleniti in quo eaque. Nostrum sapiente
-              incidunt ea dignissimos expedita commodi quis numquam nobis! Sunt
-              culpa, rem consequuntur ad, expedita accusamus adipisci eos atque
-              voluptatem voluptatum nam aperiam iste magni, fugit voluptatibus
-              quasi tenetur! Deserunt expedita eveniet iste? Nihil hic
-              repellendus animi assumenda tempora! Aut obcaecati commodi magnam
-              ipsum sapiente illo adipisci modi animi labore reprehenderit?
-              Suscipit deleniti magni quae reprehenderit accusantium quasi amet
-              praesentium consectetur exercitationem enim error, commodi
-              asperiores dicta ipsum maiores, animi numquam qui nisi.
-              Reprehenderit laudantium nobis odio error iste ipsa amet ut
-              dignissimos totam impedit vel maxime harum repellendus reiciendis
-              unde molestias minima fugit minus, similique facilis voluptatibus
-              deleniti adipisci. Sequi minima consectetur placeat ex iusto
-              impedit porro magnam nisi itaque dolorem autem aut non, excepturi
-              expedita architecto reiciendis repudiandae soluta corporis tenetur
-              distinctio. Dignissimos ad velit quis libero, cupiditate cum
-              beatae eum, iste aliquid tempore maiores ex blanditiis in nam
-              facere unde neque culpa pariatur optio nisi! Repudiandae quisquam
-              labore officia sequi placeat impedit, earum consectetur iure nobis
-              magnam praesentium, velit reprehenderit optio eaque! Eligendi ipsa
-              ipsum accusamus. Eius, iste sequi? Quod distinctio assumenda earum
-              commodi veritatis nulla, tempore id repellat iste inventore
-              aperiam molestiae molestias praesentium porro voluptas. Doloribus
-              sed, tempora enim rerum voluptates incidunt minus ea obcaecati
-              facere nam laborum nemo magni expedita aperiam distinctio quidem
-              cupiditate repellendus nulla impedit voluptate quam architecto in
-              reprehenderit ut. Veniam, rem magni!
+              Hello! My name is Joseph Stone I am a full stack developer familiar with Javascript, React, Node, and PostSQL. I love to make beautiful, responsive and fast websites as well as manipulate data through SQL.
             </p>
           </div>
         </section>

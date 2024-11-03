@@ -1,18 +1,20 @@
 :root {
   --main-bg: #373f51;
   --highlight: #3eff8b;
+  --nav-buttons: #F3D3BD;
 }
 
 header {
   display: flex;
   justify-content: space-around;
   background-color: var(--main-bg);
-  height: 20vh;
+  height: 12vh;
+  min-height: fit-content;
   width: 100%;
   color: #f3d3bd;
 }
 footer {
-  position: absolute;
+  position: relative;
   bottom: 0;
   width: 100%;
   left: 0;
@@ -28,6 +30,7 @@ i:hover {
   color: var(--highlight);
   cursor: pointer;
   transition: 300ms;
+  scale: 1.1;
 }
 h1 {
   width: 33%;
@@ -65,7 +68,16 @@ li:hover {
   color: #3eff8b;
   cursor: pointer;
 }
-
+span {
+  width: 12px;
+  height: 3px;
+  border-top: solid var(--nav-buttons);
+  transition: 300ms;
+}
+span:hover {
+  width: 100px;
+  transition: 300ms;
+}
 @media (max-width: 1200px) {
   header {
     justify-content: center;
@@ -80,3 +92,8 @@ li:hover {
     left: 0; */
   }
 }
+/* @media (max-height: 680px) {
+  header {
+    min-height: fit-content;
+  }
+} */
