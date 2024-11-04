@@ -1,0 +1,36 @@
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.card {
+  position: relative;
+  margin: 2% 2%;
+  height: 200px;
+  width: 300px;
+}
+h3 {
+  cursor: pointer;
+}
+h3:hover {
+  text-decoration: underline;
+  color: var(--main-bg);
+}
+img {
+  height: inherit;
+  width: inherit;
+}
+.overlay {
+  height: inherit;
+  width: inherit;
+  visibility: hidden;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--nav-buttons);
+  opacity: 0.5;
+}
+.overlay:hover {
+  visibility: visible;
+  z-index: 1;
+}

@@ -1,7 +1,7 @@
 :root {
   --main-bg: #373f51;
   --highlight: #3eff8b;
-  --nav-buttons: #F3D3BD;
+  --nav-buttons: #f3d3bd;
 }
 
 header {
@@ -67,16 +67,6 @@ li {
 li:hover {
   color: #3eff8b;
   cursor: pointer;
-}
-span {
-  width: 12px;
-  height: 3px;
-  border-top: solid var(--nav-buttons);
-  transition: 300ms;
-}
-span:hover {
-  width: 100px;
-  transition: 300ms;
 }
 @media (max-width: 1200px) {
   header {

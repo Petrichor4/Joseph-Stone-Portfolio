@@ -1,18 +1,18 @@
-import { Outlet } from "react-router-dom"
-import Header from "./UI/header"
-import Navigation  from "./UI/navigation"
-import Footer from "./UI/footer"
+import { Outlet } from "react-router-dom";
+import Header from "./UI/header";
+import Navigation from "./UI/navigation";
+import Footer from "./UI/footer";
 
 function App() {
   return (
     <>
-      <Header>  
+      <Header>
         <Navigation />
       </Header>
       <Outlet />
       <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

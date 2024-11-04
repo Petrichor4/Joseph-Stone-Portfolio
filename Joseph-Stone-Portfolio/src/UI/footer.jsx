@@ -1,10 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import "../styles/header.css";
-
-function handleLink(link) {
-  window.open(link);
-}
-
+import handleLink from "../components/links";
 const pages = [
   "https://github.com/Petrichor4",
   "https://www.linkedin.com/in/joseph-stone-935691185/",
