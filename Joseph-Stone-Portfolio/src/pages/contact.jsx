@@ -1,11 +1,10 @@
 import { FormControl } from "@rewind-ui/core";
-import { Textarea } from "@rewind-ui/core";
-import { Input } from "@rewind-ui/core";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faAt } from "@fortawesome/free-solid-svg-icons";
 import "../styles/contact.css";
 
 export default function Contact() {
+  // const validate = () => {
+    
+  // }
   return (
     <main>
       <div className="form">

@@ -2,6 +2,7 @@
   --main-bg: #373f51;
   --highlight: #3eff8b;
   --nav-buttons: #f3d3bd;
+  --overlay: #86bbd8;
 }
 
 header {
@@ -26,7 +27,7 @@ i {
   transition: 300ms;
   margin: 2%;
 }
-i:hover {
+footer i:hover {
   color: var(--highlight);
   cursor: pointer;
   transition: 300ms;

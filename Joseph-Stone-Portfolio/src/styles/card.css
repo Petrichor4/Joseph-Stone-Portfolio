@@ -1,13 +1,19 @@
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-around;
+#projects .container {
+  display: grid;
+  grid-template-columns: min-content min-content;
+  justify-content: center;
+  justify-items: center;
+  gap: 40px;
 }
 .card {
+  transition: 300ms;
   position: relative;
   margin: 2% 2%;
-  height: 200px;
-  width: 300px;
+  height: 350px;
+  width: 550px;
+}
+.card:hover {
+  scale: .985;
 }
 h3 {
   cursor: pointer;
@@ -21,16 +27,45 @@ img {
   width: inherit;
 }
 .overlay {
+  transition: 300ms;
+  visibility: hidden;
   height: inherit;
   width: inherit;
-  visibility: hidden;
   position: absolute;
   top: 0;
   left: 0;
-  background-color: var(--nav-buttons);
+  background-color: var(--overlay);
   opacity: 0.5;
 }
-.overlay:hover {
-  visibility: visible;
-  z-index: 1;
+.show i:hover {
+  scale: 1.2;
+  cursor: pointer;
+}
+.show {
+  transition: 300ms;
+  height: inherit;
+  width: inherit;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: var(--overlay);
+  opacity: 0.9;
+  scale: .98;
+}
+@media (max-width:1160px) {
+  #projects .container {
+    grid-template-columns: min-content;
+  }
+  .card {
+    transition: 300ms;
+    height: auto;
+    width: 450px
+  }
+}
+@media (max-width:500px) {
+  .card {
+    transition: 300ms;
+    height: auto;
+    width: 300px;
+  }
 }
