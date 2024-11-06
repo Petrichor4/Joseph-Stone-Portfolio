@@ -1,5 +1,5 @@
 import { useState } from "react";
-import "../styles/Card.css";
+import "../../src/styles/card.css";
 import handleLinks from "./links";
 
 // eslint-disable-next-line react/prop-types
