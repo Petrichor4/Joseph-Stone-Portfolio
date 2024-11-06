@@ -5,7 +5,7 @@ export default function AboutMe() {
   return (
     <>
       <main>
-        <section>
+        <section id="aboutMe">
           <h2>About Me</h2>
           <div className="container">
             <Avatar
