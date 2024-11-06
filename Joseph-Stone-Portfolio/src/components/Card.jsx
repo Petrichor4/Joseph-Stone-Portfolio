@@ -15,7 +15,6 @@ export default function Card({ img, title, repo, site }) {
             overlay.className = newCard;
             return newCard;
         });
-        // You can now manipulate the overlay element as needed
     }
 
     return (

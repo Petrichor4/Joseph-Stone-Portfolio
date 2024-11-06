@@ -28,7 +28,7 @@ i {
   margin: 2%;
 }
 footer i:hover {
-  color: var(--highlight);
+  color: var(--overlay);
   cursor: pointer;
   transition: 300ms;
   scale: 1.1;
