@@ -1,20 +1,29 @@
 import { Link } from 'react-router-dom';
 
 export default function Navigation() {
+    const selected = (event) => {
+        const navLinks = document.querySelectorAll('li');
+        navLinks.forEach(link => {
+          link.className = '';
+        });
+        const target = event.currentTarget;
+        target.className = 'nav-link active';
+      }
+
     return (
         <nav>
             <ul>
-                <li key={1}>
-                    <Link to="/">About Me</Link>
+                <li onClick={selected}>
+                    <Link className='link' to="/">About Me</Link>
                 </li>
-                <li>
-                    <Link to="/projects">Projects</Link>
+                <li onClick={selected}>
+                    <Link className='link' to="/projects">Projects</Link>
                 </li>
-                <li>
-                    <Link to="/contact">Contact Me</Link>
+                <li onClick={selected}>
+                    <Link className='link' to="/contact">Contact Me</Link>
                 </li>
-                <li>
-                    <Link to="/resume">Resume</Link>
+                <li onClick={selected}>
+                    <Link className='link' to="/resume">Resume</Link>
                 </li>
             </ul>
         </nav>

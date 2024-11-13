@@ -62,12 +62,16 @@ nav ul {
   width: 100%;
 }
 nav li {
+  border-radius: 10px;
   padding: 0 2% 0 2%;
   margin: 1%;
 }
 nav li:hover {
-  color: #3eff8b;
   cursor: pointer;
+}
+.active {
+  box-shadow: inset 0 2px 4px 1px rgba(0, 0, 0, 0.3);
+  background-color: #232733;
 }
 @media (max-width: 1200px) {
   header {

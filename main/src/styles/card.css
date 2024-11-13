@@ -29,8 +29,8 @@ img {
 .overlay {
   transition: 300ms;
   visibility: hidden;
-  height: inherit;
-  width: inherit;
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
@@ -43,16 +43,14 @@ img {
 }
 .show {
   transition: 300ms;
-  height: inherit;
-  width: inherit;
+  height: 100%;
+  width: 100%;
   position: absolute;
   top: 0;
   left: 0;
   background-color: var(--overlay);
   opacity: .9;
 }
-/* .show i {
-} */
 @media (max-width:1160px) {
   #projects .container {
     grid-template-columns: min-content;
@@ -60,13 +58,19 @@ img {
   .card {
     transition: 300ms;
     height: auto;
-    width: 450px
+    width: 550px
   }
 }
 @media (max-width:500px) {
   .card {
     transition: 300ms;
     height: auto;
-    width: 300px;
+    width: 320px;
+  }
+  .overlay h3 {
+    font-size: xx-large;
+  }
+  .show h3 {
+    font-size: xx-large;
   }
 }

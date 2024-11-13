@@ -8,6 +8,12 @@ const projects = [
     site: "https://joseph-stone-module-9-challenge.onrender.com/",
   },
   {
+    img: 'https://i.imgur.com/oestJYp.png',
+    title: 'Candidate App',
+    repo: 'https://github.com/Petrichor4/Joseph-Stone-Candidate-App',
+    site: 'https://jscandapp.netlify.app/',
+  },
+  {
     img: "https://i.imgur.com/bXz4qAp.png",
     title: "BucketList",
     repo: "https://github.com/Petrichor4/Mini-Project",
@@ -26,9 +32,9 @@ export default function Projects() {
 
   return (
     <main>
-      <section id="projects" className="flex relative justify-center">
-        <h2 className="absolute top-0 left-0">Projects</h2>
-        <div className="container m-20">
+      <section id="projects" className="flex flex-col relative justify-center">
+        <h2 style={{fontSize: 'x-large'}} className="self-start m-[2%]">Projects</h2>
+        <div className="container">
           {projects.map((project, index) => (
             <Card
               key={index}
