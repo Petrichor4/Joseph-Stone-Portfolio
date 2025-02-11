@@ -1,0 +1,11 @@
+.github:hover {
+  text-shadow: 0px 0px 10px white;
+  /* scale: 1.1; */
+}
+.linkedIn:hover {
+  text-shadow: 0px 0px 10px white;
+  /* scale: 1.1; */
+}
+.linkedIn *:hover {
+  text-shadow: 0px 0px 10px white;
+}
