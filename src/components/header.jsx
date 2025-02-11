@@ -45,6 +45,7 @@ export default function Header() {
             <BsLinkedin className="m-[2px]" />
             <h2 className="m-1">LinkedIn</h2>
           </Link>
+          <h2>Contact</h2>
         </motion.div>
       </motion.header>
     </>
