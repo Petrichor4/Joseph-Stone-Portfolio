@@ -8,10 +8,10 @@ export default function Header() {
   const { scrollY } = useScroll();
 
   // Animate header height and width based on scroll
-  const headerHeight = useTransform(scrollY, [0, 100], ["8rem", "3.5rem"]); // 32px → 14px
-  const headerWidth = useTransform(scrollY, [0, 100], ["100%", "90%"]); // Full width → 90%
-  const headerBorderRadius = useTransform(scrollY, [0,100], ["0", "50px"])
-  const headerMargin = useTransform(scrollY, [0,100], ["0", ".75rem"])
+  const headerHeight = useTransform(scrollY, [0, 10], ["8rem", "3.5rem"]); // 32px → 14px
+  const headerWidth = useTransform(scrollY, [0, 10], ["100%", "90%"]); // Full width → 90%
+  const headerBorderRadius = useTransform(scrollY, [0,10], ["0", "50px"])
+  const headerMargin = useTransform(scrollY, [0,10], ["0", ".75rem"])
 
   return (
     <>
@@ -30,7 +30,6 @@ export default function Header() {
             borderRadius: headerBorderRadius,
             margin: headerMargin,
           }}
-          transition={{ease: ["easeIn", "easeOut"]}}
         >
           <h1 className="md:text-3xl">Joseph Stone</h1>
           <Link
@@ -45,10 +44,10 @@ export default function Header() {
             <BsLinkedin className="m-[2px]" />
             <h2 className="m-1 hidden md:block">LinkedIn</h2>
           </Link>
-          <div className="scale-[.85] md:scale-100 flex items-center hover:cursor-pointer relative">
+          <Link to={'mailto:stonepreston05@gmail.com'} className="scale-[.85] md:scale-100 flex items-center hover:cursor-pointer relative">
             <BsEnvelopeFill className="m-[2px]" />
-            <h2 className="nav-button m-1 hidden md:block"><a href="mailto:stonepreston05@gmail.com">Contact</a></h2>
-          </div>
+            <h2 className="nav-button m-1 hidden md:block">Contact</h2>
+          </Link>
         </motion.div>
       </motion.header>
     </>
