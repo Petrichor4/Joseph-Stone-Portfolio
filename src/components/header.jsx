@@ -1,4 +1,4 @@
-import { BsGithub, BsLinkedin } from "react-icons/bs";
+import { BsGithub, BsLinkedin, BsEnvelopeFill } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import "../styles/App.css";
 import { motion, useScroll, useTransform } from "framer-motion";
@@ -34,18 +34,21 @@ export default function Header() {
         >
           <h1 className="md:text-3xl">Joseph Stone</h1>
           <Link
-            className="github flex scale-[.85] md:scale-100 items-center hover:cursor-pointer duration-300"
+            className="nav-button flex scale-[.85] md:scale-100 items-center hover:cursor-pointer duration-300"
             to={"https://github.com/Petrichor4"}
           >
             <BsGithub className="mb-[2px]" />
-            <h2 className="m-1">Github</h2>
+            <h2 className="m-1 hidden md:block">Github</h2>
           </Link>
-          <Link className="linkedIn scale-[.85] md:scale-100 flex items-center hover:cursor-pointer relative" to={"https://www.linkedin.com/in/joseph-stone-935691185/"}>
+          <Link className="nav-button scale-[.85] md:scale-100 flex items-center hover:cursor-pointer relative" to={"https://www.linkedin.com/in/joseph-stone-935691185/"}>
             <div className="w-full rounded-full absolute hover:shadow-custom"></div>
             <BsLinkedin className="m-[2px]" />
-            <h2 className="m-1">LinkedIn</h2>
+            <h2 className="m-1 hidden md:block">LinkedIn</h2>
           </Link>
-          <h2>Contact</h2>
+          <div className="scale-[.85] md:scale-100 flex items-center hover:cursor-pointer relative">
+            <BsEnvelopeFill className="m-[2px]" />
+            <h2 className="nav-button m-1 hidden md:block"><a href="mailto:stonepreston05@gmail.com">Contact</a></h2>
+          </div>
         </motion.div>
       </motion.header>
     </>
