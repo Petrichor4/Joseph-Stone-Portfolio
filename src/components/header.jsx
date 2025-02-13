@@ -23,7 +23,7 @@ export default function Header() {
         // style={{ height: headerHeight }}
       >
         <motion.div
-          className="flex items-center justify-around bg-black rounded-full transition-all"
+          className="flex items-center justify-around bg-black shadow-lg rounded-full transition-all"
           style={{
             width: headerWidth,
             height: headerHeight,
