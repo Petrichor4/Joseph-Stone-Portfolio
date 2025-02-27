@@ -22,6 +22,12 @@ const projects = [
     site: "https://jscandapp.netlify.app/",
     photo: "https://i.imgur.com/oestJYp.png",
     description: "This project helped me learn how to work with third-party APIs."
+  },
+  {
+    title: "Kierstyn Hart",
+    site: "https://kh-site.vercel.app/",
+    photo: "",
+    description: "A website to host all writings by the author Kiersyn Hart"
   }
 ];
 
