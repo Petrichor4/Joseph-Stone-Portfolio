@@ -11,8 +11,7 @@ export default function AboutMe() {
             <Image height={"200px"} src="/subject.png" alt="Picture of Joseph Stone"/>
             <p className="">
               Hello! My name is Joseph Stone. I love building performant
-              websites that look and feel good to interact with. I only started my developer journey
-              recently, but I love to learn and believe that it&apos;s the key to being a good developer.
+              websites that look and feel good to interact with. I love to learn and believe that it&apos;s the key to being a good developer.
             </p>
           </Container>
           <h3 className="text-3xl md:text-3xl">My projects</h3>
