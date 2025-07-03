@@ -6,7 +6,6 @@ function App() {
     <>
       <Header />
       <Outlet />
-      <div className="h-16 w-full"></div>
       <Footer />
     </>
   );
