@@ -10,23 +10,12 @@ export default function NavButton({ component }: { component: ComponentType }) {
   return (
     <MotionLink
       to={component.link}
-      className="flex items-center gap-2 relative"
+      className="flex items-center gap-2 relative text-black hover:text-blue-700"
       onHoverStart={() => setHover(true)}
       onHoverEnd={() => setHover(false)}
     >
       {component.icon}
-      <h2 className="hidden sm:block">{component.label}</h2>
-      {hover && (
-        <AnimatePresence mode="wait">
-          <motion.span
-            key={"underline"}
-            initial={{ width: 0 }}
-            animate={{ width: "100%" }}
-            exit={{ width: 0 }}
-            className="w-full bg-white h-[2px] absolute bottom-0"
-          />
-        </AnimatePresence>
-      )}
+      <h2 className="hidden sm:block text-lg">{component.label}</h2>
     </MotionLink>
   );
 }

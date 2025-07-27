@@ -1,9 +1,5 @@
 import { BsGithub, BsLinkedin, BsEnvelopeFill } from "react-icons/bs";
-import {
-  motion,
-  useScroll,
-  useTransform,
-} from "framer-motion";
+import { motion, useScroll, useTransform } from "framer-motion";
 import NavButton from "./ui/NavButton";
 import { ComponentType } from "../lib/definitions";
 
@@ -38,28 +34,18 @@ export default function Header() {
   return (
     <>
       {/* Spacer to prevent layout shift */}
-      <div className="h-32"></div>
+      {/* <div className="h-32"></div> */}
       {/* Animated Header */}
-      <motion.header
+      {/* <motion.header
         className="fixed top-0 left-0 w-full z-50 flex justify-center"
         // style={{ height: headerHeight }}
-      >
-        <motion.div
-          className="flex items-center justify-around bg-gray-900 bg-opacity-50 shadow-lg transition-all"
-          style={{
-            width: headerWidth,
-            height: headerHeight,
-            borderRadius: headerBorderRadius,
-            margin: headerMargin,
-            backdropFilter: "blur(8px)",
-          }}
-        >
-          <h1 className="md:text-3xl">Joseph Stone</h1>
-          {components.map((item, index) => (
-            <NavButton component={item} key={index} />
-          ) )}
-        </motion.div>
-      </motion.header>
+      > */}
+      <motion.div className="header flex items-center justify-around h-32 bg-[linear-gradient(to_bottom,_white_55%,_transparent_100%)]">
+        <h1 className="md:text-4xl text-black">Joseph Stone</h1>
+        {components.map((item, index) => (
+          <NavButton component={item} key={index} />
+        ))}
+      </motion.div>
     </>
   );
 }

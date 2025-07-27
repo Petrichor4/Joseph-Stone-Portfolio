@@ -11,19 +11,14 @@ interface Proj {
 }
 
 export default function ProjectCard({ proj }: { proj: Proj }) {
-  const [hover, sethover] = useState(true);
-
-  console.log(hover);
-
   return (
     <>
       <motion.div
-        className="my-4 snap-center bg-gray-800 bg-opacity-50 p-4 rounded-[12px] shadow-lg"
-        style={{backdropFilter: "blur(8px)"}}
-        onHoverStart={() => sethover(true)}
-        onHoverEnd={() => sethover(false)}
+        className="shadow h-80 bg-slate-300 bg-opacity-50 rounded p-4"
       >
-          <Image className="aspect-video h-[400px]" src={proj.photo}>{}</Image>
+        <div className=" h-full flex">
+          <Image className="aspect-video rounded" src={proj.photo}></Image>
+        </div>
       </motion.div>
     </>
   );

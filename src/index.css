@@ -1,9 +1,35 @@
+@import url("https://fonts.googleapis.com/css2?family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&family=Monsieur+La+Doulaise&display=swap");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
- body {
-    background-image: url(/vecteezy_abstract-gradient-pastel-blue-and-purple-background-neon_8617161.svg);
-    background-repeat: no-repeat;
-    background-size: cover;
- }
+* {
+  font-family: Merriweather;
+}
+
+/* body {
+  position:relative
+} */
+
+body {
+  background-image: linear-gradient(
+      to right,
+      rgba(129, 129, 129, 0.1) 1px,
+      transparent 1px
+    ),
+    linear-gradient(to bottom, rgba(129, 129, 129, 0.1) 1px, transparent 1px);
+  background-attachment: fixed;
+  background-size: 20px 20px;
+  background-color: white;
+  background-repeat: repeat;
+}
+
+/* .header {
+background: white;
+      -webkit-mask-image: radial-gradient(ellipse at center, black 40%, transparent 100%);
+      mask-image: radial-gradient(ellipse at center, black 40%, transparent 100%);
+      -webkit-mask-repeat: no-repeat;
+      mask-repeat: no-repeat;
+      -webkit-mask-size: 100% 100%;
+      mask-size: 100% 100%;
+   } */

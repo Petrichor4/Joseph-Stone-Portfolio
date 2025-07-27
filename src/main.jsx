@@ -6,7 +6,7 @@ import { Provider } from './components/ui/provider.jsx'
 import "./index.css";
 
 import App from "./App.jsx";
-import AboutMe from "./pages/aboutMe";
+import JosephStone from "./pages/JosephStone";
 import ErrorPage from "./pages/ErrorPage.jsx";
 
 const router = createBrowserRouter([
@@ -17,7 +17,7 @@ const router = createBrowserRouter([
     children: [
       {
         index: true,
-        element: <AboutMe />,
+        element: <JosephStone />,
       },
     ],
   },
