@@ -2,6 +2,7 @@ import { BsGithub, BsLinkedin, BsEnvelopeFill } from "react-icons/bs";
 import { motion, useScroll, useTransform } from "framer-motion";
 import NavButton from "./ui/NavButton";
 import { ComponentType } from "../lib/definitions";
+import { IoMail } from "react-icons/io5";
 
 export default function Header() {
   // Get scroll position
@@ -16,17 +17,17 @@ export default function Header() {
   const components: ComponentType[] = [
     {
       link: "https://github.com/Petrichor4",
-      icon: <BsGithub />,
+      icon: <BsGithub size={22} />,
       label: "Github",
     },
     {
       link: "https://www.linkedin.com/in/joseph-stone-935691185/",
-      icon: <BsLinkedin />,
+      icon: <BsLinkedin size={22} />,
       label: "LinkedIn",
     },
     {
       link: "mailto:stonepreston05@gmail.com",
-      icon: <BsEnvelopeFill />,
+      icon: <IoMail size={22} />,
       label: "Contact",
     },
   ];

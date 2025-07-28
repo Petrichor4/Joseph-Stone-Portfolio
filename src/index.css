@@ -7,18 +7,17 @@
   font-family: Merriweather;
 }
 
-/* body {
-  position:relative
-} */
+#root {
+  position: relative;
+}
 
-body {
+.background {
   background-image: linear-gradient(
       to right,
       rgba(129, 129, 129, 0.1) 1px,
       transparent 1px
     ),
     linear-gradient(to bottom, rgba(129, 129, 129, 0.1) 1px, transparent 1px);
-  background-attachment: fixed;
   background-size: 20px 20px;
   background-color: white;
   background-repeat: repeat;

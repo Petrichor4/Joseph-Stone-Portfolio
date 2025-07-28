@@ -16,9 +16,12 @@ export default function AboutMe() {
 
   return (
     <>
-      <main className="mb-8">
-        <section className="md:flex">
-          <div className="flex flex-wrap md:w-1/3 md:h-[70%] p-2 md:p-8 bg-opacity-50 justify-start md:justify-center rounded-xl">
+      <main className="mb-8 flex flex-wrap justify-center">
+        <div className="fixed top-0 left-0 w-full h-full z-[-1] overflow-hidden">
+          <div className="background w-full h-full bg-cover bg-center"></div>
+        </div>
+        <section className="md:flex justify-evenly">
+          <div className="flex flex-wrap md:w-1/3 md:h-[70%] mt-8 m-4 bg-opacity-50 justify-start md:justify-center rounded-xl">
             <Image
               className="aspect-square max-md:w-1/4 m-4 w-1/2"
               src="/IMG_0398-EDIT.jpeg"
@@ -32,7 +35,7 @@ export default function AboutMe() {
               outcomes.
             </p>
           </div>
-          <div className="md:w-2/3 pr-4">
+          <div className="md:w-2/3 max-w-[850px] mx-4">
             <h2 className="text-black text-3xl text-center mt-4 w-full relative h-fit">
               Skills
               <span className="h-[2px] bg-black w-full absolute bottom-0 left-0"></span>
@@ -72,17 +75,19 @@ export default function AboutMe() {
             </motion.div>
           </div>
         </section>
-        <section className="flex justify-center flex-wrap">
-          <h2 className="text-black text-3xl text-center my-8 w-full relative h-fit mx-4">
+        <section className="flex justify-center flex-wrap max-w-[1720px]">
+          <h2 className="text-black text-3xl text-center mt-8 w-full relative mx-4">
             Projects
-            <span className="h-[2px] bg-black w-full absolute bottom-0 left-0"></span>
           </h2>
-          <div className="flex flex-wrap justify-center gap-12">
-            {projects.map((proj, i) => (
-              <div key={i} className="">
-                <ProjectCard proj={proj} />
-              </div>
-            ))}
+          <span className="h-[2px] bg-black w-full mx-4 mb-12"></span>
+          <div className="flex justify-center w-11/12 ">
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
+              {projects.map((proj, i) => (
+                <div key={i} className="">
+                  <ProjectCard proj={proj} />
+                </div>
+              ))}
+            </div>
           </div>
         </section>
       </main>
