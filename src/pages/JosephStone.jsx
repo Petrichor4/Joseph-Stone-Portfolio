@@ -6,6 +6,7 @@ import SkillCard from "../components/ui/SkillCard";
 import { motion } from "framer-motion";
 
 export default function AboutMe() {
+  
   const containerVariants = {
     animate: {
       transition: {
@@ -23,7 +24,7 @@ export default function AboutMe() {
         <section className="md:flex justify-evenly">
           <div className="flex flex-wrap md:w-1/3 md:h-[70%] mt-8 m-4 bg-opacity-50 justify-start md:justify-center rounded-xl">
             <Image
-              className="aspect-square max-md:w-1/4 m-4 w-1/2"
+              className="aspect-square max-md:w-1/4 m-4"
               src="/IMG_0398-EDIT.jpeg"
               alt="Picture of Joseph Stone"
             />
@@ -48,7 +49,7 @@ export default function AboutMe() {
               className="frontend flex flex-wrap gap-4"
             >
               {skills.frontend.map((skill) => (
-                <SkillCard key={skill.techName} skill={skill}></SkillCard>
+                <SkillCard key={skill.techName} skill={skill} proj={false}></SkillCard>
               ))}
             </motion.div>
             <h3 className="text-black py-2 text-lg">Backend</h3>
@@ -75,12 +76,12 @@ export default function AboutMe() {
             </motion.div>
           </div>
         </section>
-        <section className="flex justify-center flex-wrap max-w-[1720px]">
-          <h2 className="text-black text-3xl text-center mt-8 w-full relative mx-4">
+        <section className="flex justify-center flex-wrap max-w-[1720px] mt-8 xl:mt-20 xl:relative">
+          <h2 className="text-black text-3xl text-center mt-8 w-full mx-4">
             Projects
           </h2>
-          <span className="h-[2px] bg-black w-full mx-4 mb-12"></span>
-          <div className="flex justify-center w-11/12 ">
+          <span className="h-[2px] bg-black w-full mx-4 xl:mx-[76px]"></span>
+          <div className="flex justify-center w-11/12 my-12 xl:my-20 xl:mb-40">
             <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-12">
               {projects.map((proj, i) => (
                 <div key={i} className="">

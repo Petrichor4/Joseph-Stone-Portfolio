@@ -15,10 +15,15 @@ import {
   SiExpo,
   SiVercel,
   SiPython,
+  SiFramer,
+  SiCloudinary,
+  SiRedux,
+  SiChakraui,
 } from "react-icons/si";
 import { RiNextjsFill } from "react-icons/ri";
 import { VscVscode } from "react-icons/vsc";
 import React, { ReactElement } from "react";
+import { AiFillApi } from "react-icons/ai";
 
 // Define the Skill interface
 export interface Skill {
@@ -47,25 +52,37 @@ const skills: {
     },
     {
       techName: "Tailwind",
-      symbol: React.createElement(SiTailwindcss)
+      symbol: React.createElement(SiTailwindcss),
     },
     {
       techName: "Next.js",
-      symbol: React.createElement(RiNextjsFill)
+      symbol: React.createElement(RiNextjsFill),
     },
     {
       techName: "Vite",
-      symbol: React.createElement(SiVite)
+      symbol: React.createElement(SiVite),
     },
     {
       techName: "Expo",
-      symbol: React.createElement(SiExpo)
+      symbol: React.createElement(SiExpo),
+    },
+    {
+      techName: "Framer Motion",
+      symbol: React.createElement(SiFramer),
+    },
+    {
+      techName: "Redux",
+      symbol: React.createElement(SiRedux),
+    },
+    {
+      techName: "ChakraUi",
+      symbol: React.createElement(SiChakraui)
     }
   ],
   backend: [
     {
       techName: "Typescript",
-      symbol: React.createElement(SiTypescript)
+      symbol: React.createElement(SiTypescript),
     },
     {
       techName: "PostgreSQL",
@@ -76,44 +93,52 @@ const skills: {
       symbol: React.createElement(SiNodedotjs),
     },
     {
-      techName: "MondoDB",
-      symbol: React.createElement(SiMongodb)
+      techName: "MongoDB",
+      symbol: React.createElement(SiMongodb),
     },
     {
       techName: "Express",
-      symbol: React.createElement(SiExpress)
+      symbol: React.createElement(SiExpress),
     },
     {
       techName: "Python",
-      symbol: React.createElement(SiPython)
-    }
+      symbol: React.createElement(SiPython),
+    },
+    {
+      techName: "api",
+      symbol: React.createElement(AiFillApi),
+    },
   ],
   tools: [
     {
       techName: "Vscode",
-      symbol: React.createElement(VscVscode)
+      symbol: React.createElement(VscVscode),
     },
     {
       techName: "git",
-      symbol: React.createElement(SiGit)
+      symbol: React.createElement(SiGit),
     },
     {
       techName: "Github",
-      symbol: React.createElement(SiGithub)
+      symbol: React.createElement(SiGithub),
     },
     {
       techName: "Zoom",
-      symbol: React.createElement(SiZoom)
+      symbol: React.createElement(SiZoom),
     },
     {
       techName: "Slack",
-      symbol: React.createElement(SiSlack)
+      symbol: React.createElement(SiSlack),
     },
     {
       techName: "Vercel",
-      symbol: React.createElement(SiVercel)
-    }
-  ]
+      symbol: React.createElement(SiVercel),
+    },
+    {
+      techName: "Cloudinary",
+      symbol: React.createElement(SiCloudinary),
+    },
+  ],
 };
 
 export { skills };
