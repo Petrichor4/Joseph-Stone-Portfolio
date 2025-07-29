@@ -35,7 +35,7 @@ const projects = [
     title: "Shop Shop",
     techStack: ['Tailwind','MongoDB','api','node.js','express', 'redux'],
     site: "https://reduxstorejs.onrender.com/",
-    github: "",
+    github: "https://github.com/Petrichor4/ReduxStoreJS",
     photo: "https://i.imgur.com/RjMFErG.png",
     clip: "/Shop-Shop.mp4",
     description:
