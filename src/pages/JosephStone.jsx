@@ -24,7 +24,7 @@ export default function AboutMe() {
         <section className="md:flex justify-evenly">
           <div className="flex flex-wrap md:w-1/3 md:h-[70%] mt-8 m-4 bg-opacity-50 justify-start md:justify-center rounded-xl">
             <Image
-              className="aspect-square max-md:w-1/4 m-4"
+              className="aspect-square max-md:w-1/4 m-4 max-w-[400px]"
               src="/IMG_0398-EDIT.jpeg"
               alt="Picture of Joseph Stone"
             />
